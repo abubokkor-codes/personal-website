@@ -1,2 +1,258 @@
-# personal-website
-Personal portfolio website of MD. Abu Bokkor Siddik.
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. ABU BOKKOR SIDDIK - Personal Website</title>
+    
+    <!-- সুন্দর ফন্টের জন্য Google Fonts (Poppins & Hind Siliguri) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- সোশ্যাল মিডিয়া আইকনের জন্য Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        h1 {
+            margin: 15px 0 5px;
+            font-size: 28px;
+            color: #0f172a;
+            letter-spacing: 0.5px;
+        }
+        .tagline {
+            color: #64748b;
+            font-size: 15px;
+            margin-bottom: 22px;
+        }
+        /* সোশ্যাল মিডিয়া বাটন ও আইকন স্টাইল */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 9px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .fb { background-color: #1877F2; }
+        .ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .th { background-color: #000000; }
+        .tg { background-color: #0088cc; }
+        .sp { background-color: #1DB954; }
+        .dc { background-color: #5865F2; }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 30px 0;
+        }
+        h2 {
+            font-size: 20px;
+            color: #1e3a8a;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 1.7;
+            color: #334155;
+            font-size: 15.5px;
+        }
+        /* টেবিল স্টাইল */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 13px 16px;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+            font-size: 15px;
+        }
+        th {
+            background-color: #1e293b;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        /* ফটো গ্যালারি স্টাইল */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .gallery-card {
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            width: 250px;
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .gallery-card span {
+            display: block;
+            margin-top: 8px;
+            font-size: 13.5px;
+            color: #64748b;
+            font-style: italic;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13.5px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- প্রোফাইল এবং সোশ্যাল মিডিয়া অংশ -->
+    <center>
+        <!-- তোমার প্রোফাইল ছবির নাম এখানে দেবে -->
+        <img src="profile.jpg" alt="Md. Abu Bokkor Siddik" class="profile-img">
+        <h1>MD. ABU BOKKOR SIDDIK</h1>
+        <div class="tagline">Student | Science &amp; Tech Enthusiast | Creative Writer</div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/abu.bokkor.siddik.2.0/" target="_blank" class="social-btn fb">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/abu_bokkor_siddik_2.0" target="_blank" class="social-btn ig">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.threads.com/@abu_bokkor_siddik_2.0" target="_blank" class="social-btn th">
+                <i class="fa-brands fa-threads"></i> Threads
+            </a>
+            <a href="https://t.me/Abu_Bokkor10" target="_blank" class="social-btn tg">
+                <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+            <a href="https://open.spotify.com/user/31l4rzngcydkkvcv4khfzinzlctu?si=o2uvv_W_Q5ebkbvxYlFJsA&utm_source=copy-link" target="_blank" class="social-btn sp">
+                <i class="fa-brands fa-spotify"></i> Spotify
+            </a>
+            <a href="https://discord.gg/6MZvKMYW" target="_blank" class="social-btn dc">
+                <i class="fa-brands fa-discord"></i> Discord
+            </a>
+        </div>
+    </center>
+
+    <hr>
+
+    <!-- আমার সম্পর্কে (About Me) -->
+    <h2>আমার সম্পর্কে (About Me)</h2>
+    <p>
+        হ্যালো! আমি <b>মোঃ আবু বক্কর সিদ্দিক</b>। আমি বিজ্ঞান বিভাগের একজন শিক্ষার্থী। পড়াশোনার পাশাপাশি নতুন প্রযুক্তি ও <b>AI টুলস</b> নিয়ে জানতে, গান শুনতে, ফুটবল খেলা দেখতে এবং অবসর সময়ে কবিতা বা গল্প লিখতে ভালোবাসি।
+    </p>
+
+    <hr>
+
+    <!-- ব্যক্তিগত তথ্য (Table) -->
+    <h2>ব্যক্তিগত তথ্য (Personal Information)</h2>
+    <table>
+        <tr>
+            <th width="35%">বিষয় (Category)</th>
+            <th width="65%">বিস্তারিত তথ্য (Details)</th>
+        </tr>
+        <tr>
+            <td><b>পূর্ণ নাম (Full Name)</b></td>
+            <td>MD. ABU BOKKOR SIDDIK</td>
+        </tr>
+        <tr>
+            <td><b>জন্মতারিখ (Date of Birth)</b></td>
+            <td>২৬ মার্চ, ২০০০ (March 26, 2000)</td>
+        </tr>
+        <tr>
+            <td><b>পড়াশোনার বিষয় (Subjects)</b></td>
+            <td>Physics, Chemistry, Higher Math, Biology, ICT</td>
+        </tr>
+        <tr>
+            <td><b>ভালো লাগার কাজ (Hobbies)</b></td>
+            <td>ফুটবল ম্যাচ দেখা, গান শোনা, কবিতা লেখা, নতুন গ্যাজেট ও AI এক্সপ্লোর করা</td>
+        </tr>
+        <tr>
+            <td><b>প্রিয় খেলা (Favorite Sport)</b></td>
+            <td>ফুটবল (Football)</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- ছবির গ্যালারি (Photo Gallery) -->
+    <h2>আমার ফটো গ্যালারি (My Gallery)</h2>
+    <div class="gallery">
+        <div class="gallery-card">
+            <img src="photo1.jpg" alt="Photo 1">
+            <span>স্মৃতিময় মুহূর্ত - ১</span>
+        </div>
+        <div class="gallery-card">
+            <img src="photo2.jpg" alt="Photo 2">
+            <span>স্মৃতিময় মুহূর্ত - ২</span>
+        </div>
+        <div class="gallery-card">
+            <img src="photo3.jpg" alt="Photo 3">
+            <span>স্মৃতিময় মুহূর্ত - ৩</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ফুটার -->
+    <div class="footer">
+        &copy; 2026 MD. ABU BOKKOR SIDDIK | All Rights Reserved
+    </div>
+
+</div>
+
+</body>
+</html>
